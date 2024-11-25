@@ -42,7 +42,7 @@ st.title("Welcome to gemini vanquisher")
 with st.sidebar:
     st.header("Gemini Vanquisher", divider="rainbow")
     st.write("Welcome to the Gemini Vanquisher AI chat interface!")
-    st.write("Ask me anything, about the health related quires ")
+    st.write("Ask me anything, About the health related quires.")
 
 # Initialize session state for storing conversation messages
 if "messages" not in st.session_state:
@@ -68,5 +68,3 @@ if prompt:
     with st.chat_message("assistant"):
         st.markdown(response)
         st.session_state.messages.append({"role": "assistant", "content": response})
-
-
